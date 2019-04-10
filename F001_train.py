@@ -12,13 +12,29 @@ from collections import Counter
 import json
 import optuna
 import sys
-if '--location' in sys.argv:
+if '--gender' in sys.argv:
+    input_path = 'tmp/C_gender/*.pkl'
+    suffix = 'gender'
+    max_data_size = 10
+elif '--location' in sys.argv:
     input_path = 'tmp/C_location/*.pkl'
+    suffix = 'location'
+    max_data_size = 30
+elif '--location_saitama' in sys.argv:
+    input_path = 'tmp/C_location_saitama/*.pkl'
+    suffix = 'location_saitama'
+    max_data_size = 30
+elif '--generation' in sys.argv:
+    input_path = 'tmp/C_generation/*.pkl'
+    suffix = 'generation'
+    max_data_size = 30
 else:
     input_path = 'tmp/C/*.pkl'
+    suffix = ''
+    max_data_size = 10
 
 term_index = json.load(open('tmp/term_index.json'))
-index_term = {idx:term for term,idx in term_index.items()}
+index_term = {idx: term for term, idx in term_index.items()}
 lils = []
 labels = []
 for idx, path in enumerate(sorted(Path().glob(input_path))):
@@ -29,18 +45,20 @@ for idx, path in enumerate(sorted(Path().glob(input_path))):
         continue
     labels.extend(labels_)
     lils.append(lil)
-    if idx >= 30:
+    if idx >= max_data_size:
         break
 
 lils = Vstack(lils).tocsr()
 labels = np.array(labels)
 # print(dict(Counter(labels.tolist())))
 
-def trainer(l1_ratio, alpha, search=True):
+
+def trainer(l1_ratio, search=True):
     kf = KFold(n_splits=4)
     coefs, aucs = [], []
     for fold, (trn_idx, val_idx) in enumerate(kf.split(lils, labels)):
-        model = SGD(loss='log', penalty='elasticnet', max_iter=100000, alpha=0.0001, l1_ratio=0.3, n_jobs=-1)
+        model = SGD(loss='log', penalty='elasticnet', max_iter=100000,
+                    alpha=0.001, l1_ratio=l1_ratio, n_jobs=-1)
         # - model = LogisticRegression(penalty='elasticnet', solver='saga', l1_ratio=0.15)
         # - model = LinearRegression()
         model.fit(lils[trn_idx], labels[trn_idx])
@@ -53,22 +71,23 @@ def trainer(l1_ratio, alpha, search=True):
         return np.mean(aucs)*-1
     else:
         term_weight = [(index_term[idx], w) for idx, w in enumerate(coefs)]
-        term_weight = sorted(term_weight, key=lambda x:x[1]*-1)
+        term_weight = sorted(term_weight, key=lambda x: x[1]*-1)
         auc = np.mean(aucs)
-        json.dump(term_weight, fp=open(f'tmp/term_weight_{auc:0.09f}.json', 'w'), indent=2, ensure_ascii=False)
+        json.dump(term_weight, fp=open(
+            f'tmp/term_weight_{auc:0.09f}_{suffix}.json', 'w'), indent=2, ensure_ascii=False)
+
 
 def objective(trial):
     l1_ratio = trial.suggest_uniform('l1_ratio', 0, 0.5)
-    alpha = trial.suggest_uniform('alpha', 0, 1)
-    return trainer(l1_ratio, alpha, search=True)
+    #alpha = trial.suggest_uniform('alpha', 0, 1)
+    return trainer(l1_ratio, search=True)
+
 
 study = optuna.create_study()
-study.optimize(objective, n_trials=10)
+study.optimize(objective, n_trials=5)
 print(study.best_value)
 print(study.best_trial)
 best_param = study.best_params
 best_param['search'] = False
 print('train with best param and dump features.')
 print('score', trainer(**best_param))
-
-

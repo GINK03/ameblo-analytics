@@ -8,6 +8,7 @@ import pickle
 from concurrent.futures import ProcessPoolExecutor as PPE
 import random
 term_index = json.load(open('tmp/term_index.json'))
+Path('tmp/C_generation').mkdir(exist_ok=True)
 
 def pmap(arg):
     ii, path = arg
@@ -17,21 +18,17 @@ def pmap(arg):
     labels = []
     lil  = Lil((len(df), len(term_index),))
     for idx, (time, label, body) in enumerate(zip(df['time'], df['label'], df['body'])):
-        #if label == 0 and random.random() >= 0.2:
-        #    continue
         labels.append(label)
         for term in str(body).split():
             if term_index.get(term) is None:
                 continue
             lil[idx, term_index[term]] = 1
-        # print(time, label)
     print('finish convert lil', path)
-    with open(f'tmp/C/{ii:03d}.pkl', 'wb') as fp:
+    with open(f'tmp/C_generation/{ii:03d}.pkl', 'wb') as fp:
         pickle.dump((labels, lil[:len(labels)]), fp)
-        # print(label, body)
 
-args = [(ii, path) for ii, path in enumerate(sorted(Path().glob('tmp/B/*.csv')))]
-#[pmap(arg) for arg in args]
-with PPE(max_workers=4) as exe:
+args = [(ii, path) for ii, path in enumerate(sorted(Path().glob('tmp/B_generation/*.csv')))]
+[pmap(arg) for arg in args[0:1]]
+with PPE(max_workers=6) as exe:
     exe.map(pmap, args)
 
