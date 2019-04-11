@@ -27,7 +27,7 @@ elif '--location_saitama' in sys.argv:
 elif '--generation' in sys.argv:
     input_path = 'tmp/C_generation/*.pkl'
     suffix = 'generation'
-    max_data_size = 30
+    max_data_size = 100
 else:
     input_path = 'tmp/C/*.pkl'
     suffix = ''
