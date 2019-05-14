@@ -11,12 +11,17 @@ from sklearn.metrics import mean_absolute_error as Mae
 from collections import Counter
 import json
 import optuna
+import sys
+if '--location' in sys.argv:
+    input_path = 'tmp/C_location/*.pkl'
+else:
+    input_path = 'tmp/C/*.pkl'
 
 term_index = json.load(open('tmp/term_index.json'))
 index_term = {idx:term for term,idx in term_index.items()}
 lils = []
 labels = []
-for idx, path in enumerate(sorted(Path().glob('tmp/C/*.pkl'))):
+for idx, path in enumerate(sorted(Path().glob(input_path))):
     print(idx, path)
     try:
         labels_, lil = pickle.load(path.open('rb'))
@@ -24,7 +29,7 @@ for idx, path in enumerate(sorted(Path().glob('tmp/C/*.pkl'))):
         continue
     labels.extend(labels_)
     lils.append(lil)
-    if idx >= 10:
+    if idx >= 30:
         break
 
 lils = Vstack(lils).tocsr()
@@ -58,7 +63,7 @@ def objective(trial):
     return trainer(l1_ratio, alpha, search=True)
 
 study = optuna.create_study()
-study.optimize(objective, n_trials=30)
+study.optimize(objective, n_trials=10)
 print(study.best_value)
 print(study.best_trial)
 best_param = study.best_params
