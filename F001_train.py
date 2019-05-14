@@ -23,26 +23,28 @@ for idx, path in enumerate(sorted(Path().glob('tmp/C/*.pkl'))):
         continue
     labels.extend(labels_)
     lils.append(lil)
-    if idx >= 30:
+    if idx >= 50:
         break
 
 lils = Vstack(lils).tocsr()
 labels = np.array(labels)
-print(dict(Counter(labels.tolist())))
+# print(dict(Counter(labels.tolist())))
 
 kf = KFold(n_splits=4)
+coefs, aucs = [], []
 for fold, (trn_idx, val_idx) in enumerate(kf.split(lils, labels)):
-    model = SGD(loss='log', penalty='elasticnet', alpha=0.0001, l1_ratio=0.15, n_jobs=-1)
-    #model = LogisticRegression(penalty='elasticnet', solver='saga', l1_ratio=0.15)
-    #model = LinearRegression()
-    print(trn_idx)
+    model = SGD(loss='log', penalty='elasticnet', max_iter=50000, alpha=0.1, l1_ratio=0.5, n_jobs=-1)
+    # model = LogisticRegression(penalty='elasticnet', solver='saga', l1_ratio=0.15)
+    # model = LinearRegression()
     model.fit(lils[trn_idx], labels[trn_idx])
     pred = model.predict(lils[val_idx])
-    print('mae', Mae(labels[val_idx], pred) )
-    print('auc', roc_auc_score(labels[val_idx], pred) )
-    
-    print(model.coef_)
-    term_weight = [(index_term[idx], w) for idx, w in enumerate(model.coef_[0])]
-    for term, weight in sorted(term_weight, key=lambda x:x[1]*-1):
-        print(term, weight)
-    exit()
+    aucs.append(roc_auc_score(labels[val_idx], pred))
+    coefs.append(model.coef_[0])
+
+coefs = np.array(coefs).mean(axis=1)
+term_weight = [(index_term[idx], w) for idx, w in enumerate(coefs)]
+print(np.mean(aucs))
+for term, weight in sorted(term_weight, key=lambda x:x[1]*-1):
+    print(term, weight)
+
+
