@@ -38,6 +38,16 @@ Twitterは若者のSNSツール、そうだね。
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/57966002-377d1180-7987-11e9-8a44-9165074f193b.png">
 </div>
 
+## サービスのユーザの人口の高齢化
+[ニコニコ動画も高齢化しているというデータがある](https://togetter.com/li/974789)ように、実はアメブロでも同様の老化が起きていることがわかっている。  
+ユーザプロフィールと登録している生年月日を突合すると、ブログを書いたときの平均年齢が逆算できる。  
+その時の平均の年齢を `age` とすると、このようなグラフになる  
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970599-24d1ff00-79be-11e9-8b1e-8a645e6a8b67.png">
+ <div> 図X. 年齢の経年変化 </div>
+</div>
+ほぼサービス人口の年齢が新陳代謝してない 
+
 ## 結局流行語（大賞）は長生きするのか
 
 見ていきましょう
@@ -75,7 +85,7 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図X. マッチングアプリ </div>
 </div>
 
-## SNS各種は継続して人気が上がり続ける
+## TV,新聞に対して、SNS各種は継続して人気が上がり続ける
 ブロードキャスト型のコンテンツのテレビに対して、twitter, facebook, line, youtube, instagramなどは人気が上がり続けている  
 
 ### Twitter
