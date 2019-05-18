@@ -96,6 +96,12 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図X. インスタグラム</div>
 </div>
 
+### YouTube
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970318-c35c6100-79ba-11e9-9fb8-e60634415032.png">
+ <div> 図X. YouTube</div>
+</div>
+
 ### テレビ
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969958-17b11200-79b6-11e9-9c2a-5c1cd5d15ca8.png">
