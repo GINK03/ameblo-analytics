@@ -45,8 +45,13 @@ Twitterは若者のSNSツール、そうだね。
 ### 壁ドン（2014年）
 
 <div align="center">
- <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969328-eda92100-79b0-11e9-9e8b-c4051998567d.png">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969312-bc305580-79b0-11e9-90dc-f46bfc166300.png">
+ <div> 図1. 壁ドン </div>
 </div>
 
 
 ## 妖怪ウォッチ(2014年)
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969328-eda92100-79b0-11e9-9e8b-c4051998567d.png">
+ <div> 図2. 妖怪ウォッチ </div>
+</div>
