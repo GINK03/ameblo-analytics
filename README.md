@@ -98,6 +98,15 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図X. PM2.5 </div>
 </div>
 
+### 暑い
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970789-9743de80-79c0-11e9-959a-f5de21d547f3.png">
+ <div> 図X. 暑い </div>
+</div>
+２０１８年が過去ないほどの比率で”暑い”と言われており、実際に人々がそう感じていたということが定量的にわかります
+
+
+
 ## TV,新聞に対して、SNS各種は継続して人気が上がり続ける
 ブロードキャスト型のコンテンツのテレビに対して、twitter, facebook, line, youtube, instagramなどは人気が上がり続けている  
 
