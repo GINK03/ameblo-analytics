@@ -62,3 +62,26 @@ Twitterは若者のSNSツール、そうだね。
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969627-14b52200-79b4-11e9-8b03-661db001cfb7.png">
  <div> 図X. マッチングアプリ </div>
 </div>
+
+## SNS各種は継続して人気が上がり続ける
+ブロードキャスト型のコンテンツのテレビに対して、twitter, facebook, line, youtube, instagramなどは人気が上がり続けている  
+### Twitter
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969694-96a54b00-79b4-11e9-8bcc-dc500fe5602d.png">
+ <div> 図X. Twitter </div>
+</div>
+### Facebook
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969696-a15fe000-79b4-11e9-8190-d1605e8b7b79.png">
+ <div> 図X. Facebook</div>
+</div>
+### line
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969701-ae7ccf00-79b4-11e9-9656-3137090c1291.png">
+ <div> 図X. line</div>
+</div>
+### インスタグラム
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969705-bc325480-79b4-11e9-86c8-fdf0c2d13798.png">
+ <div> 図X. インスタグラム</div>
+</div>
