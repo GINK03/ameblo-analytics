@@ -38,6 +38,15 @@ Twitterは若者のSNSツール、そうだね。
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/57966002-377d1180-7987-11e9-8a44-9165074f193b.png">
 </div>
 
+## 結局流行語（大賞）は長生きするのか
+
+見ていきましょう
+
+### 壁ドン（2014年）
+
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969312-bc305580-79b0-11e9-90dc-f46bfc166300.png">
+</div>
 
 
 ## 
