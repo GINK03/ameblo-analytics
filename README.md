@@ -101,3 +101,10 @@ Twitterは若者のSNSツール、そうだね。
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969958-17b11200-79b6-11e9-9c2a-5c1cd5d15ca8.png">
  <div> 図X. テレビ </div>
 </div>
+
+### 新聞
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970292-82fce300-79ba-11e9-9bc7-2aef8a78124f.png">
+ <div> 図X. 新聞 </div>
+</div>
+
