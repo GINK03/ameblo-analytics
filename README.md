@@ -56,6 +56,12 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図2. 妖怪ウォッチ </div>
 </div>
 
+### PPAP(2016年)
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970248-00742380-79ba-11e9-98b2-4e118b6ae439.png">
+ <div> 図X. PPAP </div>
+</div>
+
 ## 最近気になるキーワード
 ### マッチングアプリ
 <div align="center">
