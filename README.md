@@ -85,6 +85,19 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図X. マッチングアプリ </div>
 </div>
 
+## 周期性のあるキーワード
+### 花粉症 
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970699-775feb00-79bf-11e9-9bb2-cd769531fe16.png">
+ <div> 図X. 花粉症 </div>
+</div>
+
+### PM2.5 
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970716-aaa27a00-79bf-11e9-9cbf-901bd72a4284.png">
+ <div> 図X. PM2.5 </div>
+</div>
+
 ## TV,新聞に対して、SNS各種は継続して人気が上がり続ける
 ブロードキャスト型のコンテンツのテレビに対して、twitter, facebook, line, youtube, instagramなどは人気が上がり続けている  
 
