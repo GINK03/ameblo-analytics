@@ -56,6 +56,12 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図2. 妖怪ウォッチ </div>
 </div>
 
+### 爆買い(2015年)
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970404-e89d9f00-79bb-11e9-8010-03460ae08c0a.png">
+ <div> 図X. 爆買い </div>
+</div>
+
 ### PPAP(2016年)
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970248-00742380-79ba-11e9-98b2-4e118b6ae439.png">
