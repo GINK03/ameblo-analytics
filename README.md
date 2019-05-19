@@ -48,6 +48,7 @@ kfoldしながら、optunaでAUCの最大となる点を探索しながら各種
 埼玉県民のコーパスの特徴として「池袋」が入っているとそれらしいという結果になっており、実質的に池袋は埼玉県民の土地であるということがわかる。  
 
 <div align="center">
+  <div> 表1. 埼玉県民とその他 </div>
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/57965999-3350f400-7987-11e9-8d47-aa0d8b543420.png">
 </div>
 
@@ -56,17 +57,19 @@ kfoldしながら、optunaでAUCの最大となる点を探索しながら各種
 
 男性言葉、女性言葉が分類用の特徴量として目立っており、どんな言葉を使えば男性らしく、女性らしく統計的になるのかわかります。  
 <div align="center">
+  <div> 表２. 男女の分類 </div>
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/57966001-35b34e00-7987-11e9-8d7d-7b6922fb0153.png">
 </div>
 
 ### 1988年生以前生まれと以後生まれ
 勝手に若いというを1988以前, 1988以降の生まれの人の記事の分類をすると、 `AUC 0.681` で分類できる
 
-おそらく携帯電話の頭である090が最もわかりやすい特徴量になっていることや、文章中の `〜` も年寄りくさいな、、、と思っていたのですがそういう結果になりました。  
+おそらく携帯電話の頭である090が最もわかりやすい特徴量になっていることや、息子、娘がいること、文章中の `〜` も年寄りくさいな、、、と思っていたのですがそういう結果になりました。  
 
 Twitterは若者のSNSツール、そうだね。  
 
 <div align="center">
+  <div> 表3. 年代別 </div>
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/57966002-377d1180-7987-11e9-8a44-9165074f193b.png">
 </div>
 
@@ -76,7 +79,7 @@ Twitterは若者のSNSツール、そうだね。
 その時の平均の年齢を `age` とすると、このようなグラフになる  
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970599-24d1ff00-79be-11e9-8b1e-8a645e6a8b67.png">
- <div> 図X. 年齢の経年変化 </div>
+ <div> 図1. 年齢の経年変化 </div>
 </div>
 ほぼサービス人口の年齢が新陳代謝してない 
 
@@ -88,52 +91,52 @@ Twitterは若者のSNSツール、そうだね。
 
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969312-bc305580-79b0-11e9-90dc-f46bfc166300.png">
- <div> 図1. 壁ドン </div>
+ <div> 図2. 壁ドン </div>
 </div>
 
 
 ### 妖怪ウォッチ(2014年)
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969328-eda92100-79b0-11e9-9e8b-c4051998567d.png">
- <div> 図2. 妖怪ウォッチ </div>
+ <div> 図3. 妖怪ウォッチ </div>
 </div>
 
 ### 爆買い(2015年)
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970404-e89d9f00-79bb-11e9-8010-03460ae08c0a.png">
- <div> 図X. 爆買い </div>
+ <div> 図4. 爆買い </div>
 </div>
 
 ### PPAP(2016年)
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970248-00742380-79ba-11e9-98b2-4e118b6ae439.png">
- <div> 図X. PPAP </div>
+ <div> 図5. PPAP </div>
 </div>
 
 ## 最近気になるキーワード
 ### マッチングアプリ
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969627-14b52200-79b4-11e9-8b03-661db001cfb7.png">
- <div> 図X. マッチングアプリ </div>
+ <div> 図6. マッチングアプリ </div>
 </div>
 
 ## 周期性のあるキーワード
 ### 花粉症 
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970699-775feb00-79bf-11e9-9bb2-cd769531fe16.png">
- <div> 図X. 花粉症 </div>
+ <div> 図7. 花粉症 </div>
 </div>
 
 ### PM2.5 
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970716-aaa27a00-79bf-11e9-9cbf-901bd72a4284.png">
- <div> 図X. PM2.5 </div>
+ <div> 図8. PM2.5 </div>
 </div>
 
 ### 暑い
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970789-9743de80-79c0-11e9-959a-f5de21d547f3.png">
- <div> 図X. 暑い </div>
+ <div> 図9. 暑い </div>
 </div>
 ２０１８年が過去ないほどの比率で”暑い”と言われており、実際に人々がそう感じていたということが定量的にわかります
 
@@ -145,42 +148,48 @@ Twitterは若者のSNSツール、そうだね。
 ### Twitter
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969694-96a54b00-79b4-11e9-8bcc-dc500fe5602d.png">
- <div> 図X. Twitter </div>
+ <div> 図10. Twitter </div>
 </div>
 
 ### Facebook
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969696-a15fe000-79b4-11e9-8190-d1605e8b7b79.png">
- <div> 図X. Facebook</div>
+ <div> 図11. Facebook</div>
 </div>
 
 ### line
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969701-ae7ccf00-79b4-11e9-9656-3137090c1291.png">
- <div> 図X. line</div>
+ <div> 図12. line</div>
 </div>
 
 ### インスタグラム
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969705-bc325480-79b4-11e9-86c8-fdf0c2d13798.png">
- <div> 図X. インスタグラム</div>
+ <div> 図13. インスタグラム</div>
 </div>
 
 ### YouTube
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970318-c35c6100-79ba-11e9-9fb8-e60634415032.png">
- <div> 図X. YouTube</div>
+ <div> 図14. YouTube</div>
 </div>
 
 ### テレビ
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969958-17b11200-79b6-11e9-9c2a-5c1cd5d15ca8.png">
- <div> 図X. テレビ </div>
+ <div> 図15. テレビ </div>
 </div>
 
 ### 新聞
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970292-82fce300-79ba-11e9-9bc7-2aef8a78124f.png">
- <div> 図X. 新聞 </div>
+ <div> 図16. 新聞 </div>
 </div>
 
+## まとめ
+割と自明なことしかやっていないのと、アメブロという媒体の特性かTwitterのバズワードや言い回しは殆ど使われていないようでした。  
+
+サービス自体が若い世代の参入が少ないという状態があるので、ガンの頻出や結婚出産も比例して上がっていることがあります。  
+
+高齢化の影響を受けつつもテレビと新聞は人気が現状維持か少し落ち気味です。年齢的なバイアスを外せばSNSに準用にシェアを奪われているように見えます。  
