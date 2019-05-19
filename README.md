@@ -23,6 +23,18 @@
  - 周期性のあるキーワード
  - TV,新聞の衰退と、SNSやYouTubeの躍進
 
+## こういった大規模コーパスで分類するのに向いている疎行列 + Stochastic Gradient Descent  
+[Andrew NGさんが説明しているStochastic Gradient Descentの動画](https://www.youtube.com/watch?v=W9iWNJNFzQI)がありわかりやすいです。  
+
+すべてのデータ・セットを一度にオンメモリに展開して最適化するというものではないので、 
+1000万を超えるコーパスでもうまくすれば分類することができます。  
+
+ScikitLearnには線形モデル各種をSGDで最適化できる関数が用意されていて、SVM, Logistic Regressonなどなどが損失関数の設定で行えるようになっています。  
+またペナルティも、L1, L2のほかelasticが最新のScikitLearnでは用意されていて便利です（2019年5月現在のAnacondaのデフォルトのScikitLearnは実装されていないようですが...）  
+
+
+
+
 ## 代表的な角度でのクラシフィケーション（分類）とその重要度
 
 ### 埼玉県民とそれ以外の違い
