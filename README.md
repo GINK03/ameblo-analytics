@@ -113,30 +113,43 @@ Twitterは若者のSNSツール、そうだね。
  <div> 図5. PPAP </div>
 </div>
 
-## 最近気になるキーワード
-### マッチングアプリ
+## ライフステージなどに応じたキーワード  
+
+### ガン
 <div align="center">
- <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969627-14b52200-79b4-11e9-8b03-661db001cfb7.png">
- <div> 図6. マッチングアプリ </div>
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57978523-63ad9680-7a4a-11e9-8713-edf79901f231.png">
+ <div> 図6. ガン </div>
+</div>
+
+### 出産
+<div align="center">
+ <img width="100%" src="hhttps://user-images.githubusercontent.com/4949982/57978534-a4a5ab00-7a4a-11e9-800a-9798d7707a0a.png">
+ <div> 図7. 出産 </div>
+</div>
+
+### 結婚
+<div align="center">
+ <img width="100%" src="https://user-images.githubusercontent.com/4949982/57978547-ddde1b00-7a4a-11e9-92c4-d706573fdcfc.png">
+ <div> 図8. 結婚 </div>
 </div>
 
 ## 周期性のあるキーワード
 ### 花粉症 
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970699-775feb00-79bf-11e9-9bb2-cd769531fe16.png">
- <div> 図7. 花粉症 </div>
+ <div> 図９. 花粉症 </div>
 </div>
 
 ### PM2.5 
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970716-aaa27a00-79bf-11e9-9cbf-901bd72a4284.png">
- <div> 図8. PM2.5 </div>
+ <div> 図10. PM2.5 </div>
 </div>
 
 ### 暑い
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970789-9743de80-79c0-11e9-959a-f5de21d547f3.png">
- <div> 図9. 暑い </div>
+ <div> 図11. 暑い </div>
 </div>
 ２０１８年が過去ないほどの比率で”暑い”と言われており、実際に人々がそう感じていたということが定量的にわかります
 
@@ -148,43 +161,43 @@ Twitterは若者のSNSツール、そうだね。
 ### Twitter
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969694-96a54b00-79b4-11e9-8bcc-dc500fe5602d.png">
- <div> 図10. Twitter </div>
+ <div> 図12. Twitter </div>
 </div>
 
 ### Facebook
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969696-a15fe000-79b4-11e9-8190-d1605e8b7b79.png">
- <div> 図11. Facebook</div>
+ <div> 図13. Facebook</div>
 </div>
 
 ### line
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969701-ae7ccf00-79b4-11e9-9656-3137090c1291.png">
- <div> 図12. line</div>
+ <div> 図14. line</div>
 </div>
 
 ### インスタグラム
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969705-bc325480-79b4-11e9-86c8-fdf0c2d13798.png">
- <div> 図13. インスタグラム</div>
+ <div> 図15. インスタグラム</div>
 </div>
 
 ### YouTube
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970318-c35c6100-79ba-11e9-9fb8-e60634415032.png">
- <div> 図14. YouTube</div>
+ <div> 図16. YouTube</div>
 </div>
 
 ### テレビ
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57969958-17b11200-79b6-11e9-9c2a-5c1cd5d15ca8.png">
- <div> 図15. テレビ </div>
+ <div> 図17. テレビ </div>
 </div>
 
 ### 新聞
 <div align="center">
  <img width="100%" src="https://user-images.githubusercontent.com/4949982/57970292-82fce300-79ba-11e9-9bc7-2aef8a78124f.png">
- <div> 図16. 新聞 </div>
+ <div> 図18. 新聞 </div>
 </div>
 
 ## まとめ
