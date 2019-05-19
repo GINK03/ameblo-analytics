@@ -6,9 +6,10 @@
  - 142万人のプロフィール 
  
 ## ダウンロード
-  - TODO: DropBox Link
+  - [ブログをパースしたもの](https://www.dropbox.com/s/wpl53r0tm0jh5i9/jsons_content_snapshot_20190510.tar.gz?dl=0)
+  - [プロフィールをパースしたもの](https://www.dropbox.com/s/zc3nl0wx6b2o1s7/jsons_profile_snapshot_20190510.tar.gz?dl=0)
   
-## 何を分析(集計)するか
+## 分析(集計)すること
  - 代表的な角度でのクラシフィケーション（分類）とその重要度
  - 流行語大賞は結局、その後も根付くのか
  - 周期性のあるキーワード
