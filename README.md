@@ -32,8 +32,12 @@
 ScikitLearnには線形モデル各種をSGDで最適化できる関数が用意されていて、SVM, Logistic Regressonなどなどが損失関数の設定で行えるようになっています。  
 またペナルティも、L1, L2のほかelasticが最新のScikitLearnでは用意されていて便利です（2019年5月現在のAnacondaのデフォルトのScikitLearnは実装されていないようですが...）  
 
+### 実際にやった分類
+ScikitLearnのSGDClassifierを利用して、ペナルティをelasticとしました。  
 
+kfoldしながら、optunaでAUCの最大となる点を探索しながら各種ハイパラを探索させています。  
 
+[コード](https://github.com/GINK03/ameblo-analytics/blob/master/F001_train.py)
 
 ## 代表的な角度でのクラシフィケーション（分類）とその重要度
 
