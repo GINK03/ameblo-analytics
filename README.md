@@ -17,6 +17,11 @@
   - [ブログをパースしたもの](https://www.dropbox.com/s/wpl53r0tm0jh5i9/jsons_content_snapshot_20190510.tar.gz?dl=0)
   - [プロフィールをパースしたもの](https://www.dropbox.com/s/zc3nl0wx6b2o1s7/jsons_profile_snapshot_20190510.tar.gz?dl=0)
   
+## コード
+ 基本的にはデータをダウンロードして `A, B, C, D, ...` の順序で実行していくことで再現できます(メモリが32GBは必要です)  
+ 
+[GitHub](https://github.com/GINK03/ameblo-analytics)   
+  
 ## 分析(集計)すること
  - 代表的な角度でのクラシフィケーション（分類）とその重要度
  - 流行語大賞は結局、その後も根付くのか
